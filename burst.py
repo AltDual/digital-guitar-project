@@ -4,8 +4,7 @@ from temporal import Hertz
 
 
 class BurstGenerator(Protocol):
-    def __call__(self, num_samples: int, sampling_rate: Hertz) -> np.ndarray:
-        ...
+    def __call__(self, num_samples: int, sampling_rate: Hertz) -> np.ndarray: ...
 
 
 class WhiteNoise:

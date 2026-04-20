@@ -22,8 +22,7 @@ class Time:
             case Decimal():
                 object.__setattr__(self, "seconds", seconds)
             case Fraction():
-                object.__setattr__(
-                    self, "seconds", Decimal(str(float(seconds))))
+                object.__setattr__(self, "seconds", Decimal(str(float(seconds))))
             case _:
                 raise TypeError(f"unsupported type '{type(seconds).__name__}")
 
